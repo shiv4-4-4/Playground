@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolling Belt · Baby Balance</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #141414;
+    }
+    canvas {
+      touch-action: none; /* a finger on the canvas never scrolls the page */
+    }
+  </style>
+
+  <!-- p5.js 2.x -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@2.2.3/lib/p5.js"></script>
+  
+  <!-- p5-phone: the permission tap, the gesture lock, the sensors -->
+  <script src="https://cdn.jsdelivr.net/npm/p5-phone@1.15.4/dist/p5-phone.min.js"></script>
+  
+  <!-- NoSleep.js: keep the screen on -->
+  <script src="https://cdn.jsdelivr.net/npm/nosleep.js@0.12.0/dist/NoSleep.min.js"></script>
+
+  
+  <!-- on a laptop, a QR code of this page, to open it on a phone -->
+  <script>
+    if (location.protocol === 'https:' || location.protocol === 'blob:') {
+      addEventListener('load', function () { showDesktopQr(); });
+    }
+  </script>
+</head>
+<body>
+  <script src="sketch.js"></script>
+</body>
+</html>
+
